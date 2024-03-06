@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cctype>
 #include <string>
+#include <fstream>
 using namespace std;
 string Sifreleme(string metin);
 string Cozme(string sifreliMetin);
@@ -62,7 +63,6 @@ string Sifreleme(string metin)
                     {
                         sifreliMetin = sifreliMetin + to_string(i+1);
                         sifreliMetin = sifreliMetin + to_string(j+1);
-                        sifreliMetin = sifreliMetin + ' ';
                     }
                 }
             }
@@ -101,11 +101,7 @@ string Cozme(string sifreliMetin)
         {
             metin = metin + polybiusKaresi[satir][sutun];
         }
-        else if(sifreliMetin[i] == ' ')
-        {
-            metin = metin + " ";
-            i--;
-        }
     }
     return metin;
 }
+
