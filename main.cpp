@@ -36,3 +36,31 @@ string Sifreleme(string metin)
             }
     return sifreliMetin;
 }
+string Cozme(string sifreliMetin)
+{   int i;
+    int satir;
+    int sutun;
+    string metin;
+    string polybiusKaresi[5] = {
+        "ABCDE",
+        "FGHIK",
+        "LMNOP",
+        "QRSTU",
+        "VWXYZ"
+    };
+    for(i = 0; i < sifreliMetin.length(); i = i + 3)
+        satir = sifreliMetin[i] - '1';
+        sutun = sifreliMetin[i] - '1';
+        if(satir >= 0 && satir < 5 && sutun >=0 && sutun < 5)
+        {
+            metin = metin + polybiusKaresi[satir][sutun];
+            
+        }
+        else if(sifreliMetin[i] == ' ')
+        {
+            metin = metin + " ";
+            i = i - 2;
+        }
+        return metin;
+}
+
