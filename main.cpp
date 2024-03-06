@@ -63,4 +63,33 @@ string Cozme(string sifreliMetin)
         }
         return metin;
 }
+int main()
+{
+    string metin;
+    string sec;
+    cout<<"------------------------------------";
+    cout<<"Polybius Sifreleme ve Cozme Programi";
+    cout<<"------------------------------------";
+    cout<<"1 - Metni sifrelemek mi istersiniz?"<<endl;
+    cout<<"2 - Metni cozmek mi istersiniz?"<<endl;
+    cout<<"(1/2)";
+    cin>>sec;
+    if(sec == "1")
+    {
+        cout<<"Sifrelemek istediginiz metni giriniz:";
+        cin>>metin;
+        cout<<"Sifreli metin:"<<Sifreleme(metin)<<endl;
+    }
+    else if(sec == "2")
+    {
+        cout<<"Cozmek istediginiz metni giriniz:";
+        cin>>metin;
+        cout<<"Cozulmus metin:"<<Cozme(metin)<<endl;
+    }
+    else
+    {
+        cout<<"Gecersiz!"<<endl;
+    }
+    return 0;
+}
 
