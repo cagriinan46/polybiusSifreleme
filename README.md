@@ -5,7 +5,7 @@ Bu sistemin özelliği, alfabedeki harflerin, iki boyutlu bir tabloya yerleştir
 
 Aşağıda ingiliz alfabesindeki harfler için böyle bir tablo gösterilmiştir:
 
-    1	2	3	4	5
+   1	2	3	4	5
 1	A	B	C	D	E
 2	F	G	H	I/J	K
 3	L	M	N	O	P
