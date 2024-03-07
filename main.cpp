@@ -7,7 +7,7 @@ string Sifreleme(string metin);
 string Cozme(string sifreliMetin);
 int main()
 {
-    cout<<"hello";
+    cout<<"hello world";
     string metin;
     string sec;   
     cout<<"------------------------------------"<<endl;
