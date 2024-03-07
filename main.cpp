@@ -70,7 +70,6 @@ string Sifreleme(string metin)
         else if (harf == ' ')
         {
             sifreliMetin = sifreliMetin + ' ';
-
         }
     }   
     return sifreliMetin;
@@ -94,9 +93,9 @@ string Cozme(string sifreliMetin)
             metin = metin + " ";
             continue;
         }
-        int satir = sifreliMetin[i] - '1';
+        int satir = sifreliMetin[i] - '1';  
         int sutun = sifreliMetin[i+1] - '1';
-        
+
         if(satir >= 0 && satir < 5 && sutun >=0 && sutun < 5)
         {
             metin = metin + polybiusKaresi[satir][sutun];
